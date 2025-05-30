@@ -1,11 +1,13 @@
 import React from 'react' 
 import {Routes, Route} from "react-router"
-import { Home } from './pages/Home'
+import { Home } from './pages/Home.jsx'
+
 
 function App() {
   return (
    <Routes>
-    <Route path='/' index element = {<Home/>} />
+    <Route path='/'  element = {<Home/>} />
+    
    </Routes>
   )
 }
