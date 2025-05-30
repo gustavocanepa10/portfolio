@@ -17,9 +17,9 @@ import { Link, useNavigate } from 'react-router';
 export function Home() {
   const navigate = useNavigate()
   return (
-    <div className='w-full h-max overflow-x-hidden flex flex-col font-sans'>
+    <div className='w-full text-gray-100  bg-gray-900 h-screen overflow-x-hidden  flex flex-col font-sans'>
       
-  <nav className='flex text-black w-full rounded-md shadow-2xs gap-4 bg-white pr-30 p-6 justify-between'> 
+  <nav className='flex text-gray-100 w-full rounded-md bg-gray-800 border-b border-gray-700 gap-4 pr-30 p-6 justify-between'> 
     <div className='flex gap-4 items-center'>
       <img className='w-12 h-11' src="assets/img2.png" alt="" />
       <h1 className=' text-3xl font-sans'>João Gustavo</h1>
@@ -28,7 +28,7 @@ export function Home() {
         <li>
           <button
             onClick={() => navigate("/")}
-            className=" hover:text-blue-800 cursor-pointer text-lg font-medium transition-colors duration-300" 
+            className=" hover:text-gray-600 cursor-pointer text-lg font-medium transition-colors duration-300" 
           >
             Home
           </button>
@@ -36,7 +36,7 @@ export function Home() {
         <li>
           <button
            
-            className=" hover:text-blue-800 cursor-pointer text-lg font-medium transition-colors duration-300"
+            className=" hover:text-gray-600 cursor-pointer text-lg font-medium transition-colors duration-300"
           >
             Sobre mim
           </button>
@@ -44,7 +44,7 @@ export function Home() {
         <li>
           <a
             href="#projetos"
-            className=" hover:text-blue-800 text-lg font-medium transition-colors duration-300"
+            className=" hover:text-gray-600 text-lg font-medium transition-colors duration-300"
           >
             Projetos
           </a>
@@ -131,7 +131,7 @@ export function Home() {
         </Typography>
       </CardContent>
       <CardActions>
-       <Button sx={{transition : 'transform 0.2s ease-in-out', '&:hover': { transform: 'scale(1.1)'}}}  target='_blank' href='https://pizza-menu-mauve-pi.vercel.app/' variant='contained' className= "!border-2  !bg-blue-700 !text-md   !text-white !border-blue-800 !w-44 !h-12 !p-2 !text-center !rounded-md"  
+       <Button sx={{marginLeft: 2,transition : 'transform 0.2s ease-in-out', '&:hover': { transform: 'scale(1.1)'}}}  target='_blank' href='https://pizza-menu-mauve-pi.vercel.app/' variant='contained' className= "!border-2  !bg-blue-700 !text-md   !text-white !border-blue-800 !w-44 !h-12 !p-2 !text-center !rounded-md"  
        size="medium">Acessar projeto</Button>
         
       </CardActions>
