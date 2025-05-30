@@ -76,7 +76,7 @@ export function Home() {
             <a href='mailto:gustavociscotto@gmail.com'>
             <MailIcon sx={{width: 100,height: 50, transition: 'transform 0.2s ease-in-out', '&:hover': { transform: 'scale(1.1)',  },}}/>
             </a>
-           <a href='https://www.linkedin.com/public-profile/settings?lipi=urn%3Ali%3Apage%3Ad_flagship3_profile_self_edit_contact-info%3BXJblPwemSYutyix6gEDRfw%3D%3D'>
+           <a href='https://www.linkedin.com/in/joao-gustavo-ferreira-canepa-0a2572226/'>
            <LinkedInIcon  sx={{width: 100,height: 50, transition: 'transform 0.2s ease-in-out', '&:hover': { transform: 'scale(1.1)',  },}}/>
            </a>
            <a href='https://www.instagram.com/canepadev/'> <InstagramIcon  sx={{width: 100,height: 50, transition: 'transform 0.2s ease-in-out', '&:hover': { transform: 'scale(1.1)',  },}}/></a>
