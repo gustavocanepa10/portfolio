@@ -364,17 +364,7 @@ export function Home() {
         </div>
       </motion.div>
 
-      <motion.footer
-        initial={{ opacity: 0 }}
-        animate={{ opacity: 1 }}
-        transition={{ duration: 0.5, ease: 'easeOut', delay: 0.5 }}
       
-        className={"text-center py-8 mt-auto border-t border-slate-700 bg-slate-900"}
-      >
-        <p className={"text-sm text-slate-400"}>
-          &copy; {new Date().getFullYear()} João Gustavo
-        </p>
-      </motion.footer>
     </div>
   );
 }
