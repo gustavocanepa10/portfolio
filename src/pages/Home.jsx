@@ -11,13 +11,13 @@ import MailIcon from "@mui/icons-material/Mail";
 import { motion } from "framer-motion";
 import "../themes.css";
 
-import { PaletteIcon, MenuIcon, Menu, SunIcon } from "lucide-react";
+import { PaletteIcon, MenuIcon, Menu, SunIcon, MoonIcon } from "lucide-react";
 
 export function Home() {
   const [theme, setTheme] = useState(() => {
-    const storageTheme = localStorage.getItem('theme')
+    const storageTheme = localStorage.getItem("theme");
 
-    return storageTheme
+    return storageTheme;
   });
 
   function handleTheme(event) {
@@ -31,7 +31,7 @@ export function Home() {
 
   useEffect(() => {
     document.documentElement.setAttribute("data-theme", theme);
-    localStorage.setItem('theme', theme)
+    localStorage.setItem("theme", theme);
   }, [theme]);
 
   return (
@@ -42,28 +42,30 @@ export function Home() {
         color: "var(--text-default)",
       }}
     >
-
       <div className="flex justify-center w-full  p-4  items-center">
-        <div className="fixed  top-0 left-0 m-4 bg-none border-none ">
-       
-  
-
-      </div>
+        <div className="fixed  top-0 left-0 m-4 bg-none border-none "></div>
         <div className="flex items-center gap-2 justify-center">
+          <img className="w-16 h-16" src="assets/react.png" />
+          <h2 className="text-3xl font-bold font-sans">Portfolio</h2>
 
-        <img className="w-16 h-16" src="assets/react.png"/>
-        <h2 className="text-3xl font-bold font-sans">Portfolio</h2>
-
-        <button onClick={handleTheme} className="w-11 h-11 cursor-pointer ml-6">
-          <SunIcon/>
-        </button>
-
+          {theme === "dark" ? (
+            <button
+              onClick={handleTheme}
+              className="w-11 h-11 cursor-pointer ml-6"
+            >
+              <MoonIcon />
+            </button>
+          ) : (
+            <button
+              onClick={handleTheme}
+              className="w-11 h-11 cursor-pointer ml-6"
+            >
+              <SunIcon />
+            </button>
+          )}
+        </div>
       </div>
-      
 
-      </div>
-      
-      
       <motion.div>
         <div className="flex flex-col-reverse justify-center items-center gap-8 mt-20 md:mt-30">
           <div className="flex flex-col w-full max-w-xs md:max-w-md text-center md:text-left items-center md:items-start gap-4 px-4">
