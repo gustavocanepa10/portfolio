@@ -1,17 +1,31 @@
 {
-  "files": [],
-  "references": [
-    {
-      "path": "./tsconfig.app.json"
-    },
-    {
-      "path": "./tsconfig.node.json"
-    }
-  ],
   "compilerOptions": {
+   
+    "target": "ES2020", 
+    "jsx": "react-jsx", 
+    "lib": ["DOM", "DOM.Iterable", "ESNext"], 
+    "module": "ESNext", 
+    "moduleResolution": "bundler", 
+
+    
+    "noEmit": true, 
+
+    
     "baseUrl": ".",
     "paths": {
       "@/*": ["./src/*"]
-    }
-  }
+    },
+
+   
+    "strict": true, 
+    "isolatedModules": true, 
+    "esModuleInterop": true, 
+    "forceConsistentCasingInFileNames": true, 
+    "skipLibCheck": true, 
+
+ 
+    "resolveJsonModule": true 
+  },
+  "include": ["src"], 
+  "exclude": ["node_modules", "dist", "build"] 
 }
